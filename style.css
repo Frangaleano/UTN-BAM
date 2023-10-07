@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(34, 195, 116);
+    background: linear-gradient(180deg, rgba(34, 195, 116, 1) 0%, rgba(165, 191, 78, 1) 53%, rgba(253, 245, 45, 1) 100%);
+    font-weight: bold;
+    text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#ingredientes {
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredientes h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#div-ingredientes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#receta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+#img-receta {
+    width: 500px;
+    height: 400px;
+}

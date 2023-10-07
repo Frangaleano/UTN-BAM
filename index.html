@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UTN-BAM 2.0</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -15,16 +16,18 @@
     <main>
         <p>Que pude haber hecho el dia del estudiante? estudiar claramente. <br>
             si hay un dia del estudiante, es porque hay estudiantes. <br>
-            orgulloso de poder decir que soy uno mas!
+            orgulloso de poder decir que soy uno mas! <br>
             pero teniendo presente que soy un <b>ESTUDIANTE</b></p>
 
         <h2>Mi postre favorito es: <b>Lemon pie</b></h2>
+    </main>
 
-        <section>
-            <h2>INGREDIENTES</h2>
+    <section id="ingredientes">
+        <h2>INGREDIENTES</h2>
 
-            <h3>Ingredientes para la masa:</h3>
+        <div id="div-ingredientes">
             <ul>
+                <h3>Ingredientes para la masa:</h3>
                 <li>250 grs de harina</li>
                 <li>4 cdas de azúcar</li>
                 <li>120 grs de manteca</li>
@@ -32,8 +35,8 @@
                 <li>1 huevo</li>
             </ul>
 
-            <h3>Ingredientes para el relleno:</h3>
             <ul>
+                <h3>Ingredientes para el relleno:</h3>
                 <li>1 huevo</li>
                 <li>1 taza de azúcar</li>
                 <li>4 cdas de fécula de maíz</li>
@@ -42,14 +45,15 @@
                 <li>Ralladura de 1 limón</li>
             </ul>
 
-            <h3>Ingredientes para el merengue:</h3>
             <ul>
+                <h3>Ingredientes para el merengue:</h3>
                 <li>4 claras</li>
                 <li>1/2 taza de azúcar</li>
             </ul>
+        </div>
+    </section>
 
-        </section>
-
+    <section id="receta">
         <h2>Receta paso a paso:</h2>
         <ol>
             <li>Hacer la masa uniendo los ingredientes y dejar reposar media hora envuelta en papel film.</li>
@@ -69,9 +73,23 @@
             </li>
         </ol>
 
-        <img src="./img/lemon-pie.jpg" alt="imagen lemon-pie">
+        <img id="img-receta" src="./img/lemon-pie.jpg" alt="imagen lemon-pie">
+    </section>
 
-    </main>
+    <section id="contacto">
+        <form action="https://formspree.io/f/xqkvgjow" method="POST">
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Mensaje:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
         <a href="#title-name">Volver</a>
